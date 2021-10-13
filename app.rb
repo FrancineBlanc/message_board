@@ -6,8 +6,8 @@ class MessageBoard < Sinatra::Base
     register Sinatra::Reloader
   end
 
-  get "/" do
-    "Welcome to the Boards!"
+  get "/home" do
+    erb(:home)
   end
 
   run! if app_file == $0
