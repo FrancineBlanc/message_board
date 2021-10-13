@@ -1,0 +1,8 @@
+<ul>
+  <% @messages.each do |message| %>
+    <li><%= message[:name] %> : <%= message[:post] %></li>
+  <% end %>
+</ul>
+<form action="/home">
+    <input type="submit" value="Back">
+</form>
